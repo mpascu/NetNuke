@@ -8,11 +8,11 @@ NetNuke is a wireless pentesting and monitoring gadget based on the [ESP32 SoC](
 
 ## 🔧 Features
 
-- 📡 **Wi-Fi Scanner** (TODO) – View nearby access points and clients in real-time.
+- 📡 **Wi-Fi Scanner** (Coding, working partially) – View nearby access points and clients in real-time.
 - 📶 **Deauthentication Attacks** (TODO) – Disconnect clients from Wi-Fi networks.
-- 🧲 **Wi-Fi Jamming** (Coding, working partially) – Jam specific or broad Wi-Fi channels (2.4 GHz).
-- 🧲 **Bluetooth Jamming** (Coding, working partially) – Jam Bluetooth channels (2.4 GHz).
-- 📘 **Bluetooth Scanner** (TODO) – Scan for nearby BLE and Classic Bluetooth devices.
+- 🧨 **Wi-Fi Jamming** (Coding, working partially) – Jam specific or broad Wi-Fi channels (2.4 GHz).
+- 🧨 **Bluetooth Jamming** (Coding, working partially) – Jam Bluetooth channels (2.4 GHz).
+- 📡 **Bluetooth Scanner** (TODO) – Scan for nearby BLE and Classic Bluetooth devices.
 - 📥 **Packet Sniffing** (TODO) – Monitor 802.11 Wi-Fi packets.
 - 🔒 **MAC Address Randomization** (TODO) – Evade tracking.
 
@@ -21,6 +21,14 @@ NetNuke is a wireless pentesting and monitoring gadget based on the [ESP32 SoC](
 
 ## 🛠 Hardware Requirements
 
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Hardware Assembly
+Gather the required hardware components:
 - **38pin ESP32 Development Board**
 - **NRF24L01 2.4Ghz Transceptor**
 - **I2C OLED Display (SSD1306/SH1106)**
@@ -30,18 +38,22 @@ NetNuke is a wireless pentesting and monitoring gadget based on the [ESP32 SoC](
   - **Lithium 3.7V Battery + Lithium battery charger** for portability
   - **3D Printed Case**
 
----
+Refer to the wiring diagram below to assemble the NetNuke:
 
-## 🚀 Getting Started
+![NetNuke Wiring Diagram](schematics/schematic_bb.png)
 
-### 1. Clone the Repository
+Build result:
+
+<img src="schematics/v1.0_photo.jpg" width=50%>
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/mpascu/NetNuke.git
 ```
 
 
-### 2. Install Dependencies
+### 3. Install Dependencies
 
 Install Arduino and the following libraries:
  - GEM
